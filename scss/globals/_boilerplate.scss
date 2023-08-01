@@ -1,5 +1,10 @@
+@use "../util" as u;
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+body {
+  font-family: u.$font;
 }

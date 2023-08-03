@@ -24,20 +24,30 @@
   <body>
     <header>
       <!-- Navbar -->
-      <nav id="navbar">
-        <img src="images/logo.svg" alt="logo" />
+      <nav class="navbar container">
+        <img class="navbar__logo" src="images/logo.svg" alt="logo" />
         <!-- nav links -->
-        <ul class="navlinks">
-          <li class="navlink">Pricing</li>
-          <li class="navlink">Product</li>
-          <li class="navlink">About Us</li>
-          <li class="navlink">Careers</li>
-          <li class="navlink">Community</li>
-        </ul>
-        <button class="navbar__btn">Get Started</button>
+        <div class="navbar__navlinks__container">
+          <ul class="navbar__navlinks navbar__navlinks__hidden">
+            <li class="navbar__navlink">Pricing</li>
+            <li class="navbar__navlink">Product</li>
+            <li class="navbar__navlink">About Us</li>
+            <li class="navbar__navlink">Careers</li>
+            <li class="navbar__navlink">Community</li>
+          </ul>
+        </div>
+        <button class="navbar__btn hidden">Get Started</button>
         <!-- nav menu icons -->
-        <img src="images/icon-hamburger.svg" alt="menu icon" />
-        <img src="images/icon-close.svg" alt="menu close" />
+        <img
+          class="navbar__icon navbar__icon--menu"
+          src="images/icon-hamburger.svg"
+          alt="menu icon"
+        />
+        <img
+          class="navbar__icon navbar__icon--close hidden"
+          src="images/icon-close.svg"
+          alt="menu close"
+        />
       </nav>
     </header>
   </body>

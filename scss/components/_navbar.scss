@@ -7,6 +7,9 @@
   padding-top: 1rem;
   position: relative;
 
+  @media screen and (min-width: 1280px) {
+  }
+
   &__logo {
     height: 18px;
 
@@ -47,6 +50,9 @@
       width: 100%;
       justify-content: space-between;
     }
+    @media screen and (min-width: 1280px) {
+      width: 60%;
+    }
   }
 
   &__navlinks__hidden {
@@ -75,6 +81,22 @@
 
     @media screen and (min-width: 768px) {
       display: none;
+    }
+  }
+
+  &__btn {
+    display: none;
+
+    @media screen and (min-width: 1280px) {
+      display: block;
+      font-family: inherit;
+      font-weight: 500;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      box-shadow: 0 5px 10px var(--bright-red);
+      border-radius: 20px;
+      background-color: var(--bright-red);
+      color: var(--very-light-gray);
     }
   }
 }

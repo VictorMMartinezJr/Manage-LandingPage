@@ -9,17 +9,27 @@
 
   &__logo {
     height: 18px;
+
+    @media screen and (min-width: 768px) {
+      height: auto;
+    }
   }
 
   &__navlinks__container {
     position: absolute;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
     top: 100%;
     left: 0;
     width: 100%;
     margin-top: 2rem;
+
+    @media screen and (min-width: 768px) {
+      position: static;
+      margin-top: 0;
+      width: 70%;
+      height: 100%;
+    }
   }
 
   &__navlinks {
@@ -30,11 +40,23 @@
     align-items: center;
     padding: 1rem 0;
     transition: opacity 0.2s ease-in-out;
+
+    @media screen and (min-width: 768px) {
+      outline: none;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+    }
   }
 
   &__navlinks__hidden {
     opacity: 0;
     pointer-events: none;
+
+    @media screen and (min-width: 768px) {
+      opacity: 1;
+      pointer-events: all;
+    }
   }
 
   &__navlink {
@@ -42,9 +64,17 @@
     padding: 1rem 0;
     color: var(--dark-blue);
     font-weight: 700;
+
+    @media screen and (min-width: 768px) {
+      cursor: pointer;
+    }
   }
 
   &__icon {
     cursor: pointer;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 }
